@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+/* Estilos generales */
+body {
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.fixed-top{
+    margin: 0;
+    padding: 20px;
+}
+.bg-menu{
+    background-color: #4A4A4A;
+}
+
+.bg-menus{
+    background-color: #4a4a4a83;
+}
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+.container-fluid img{
+    width: 60px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+
+/* Hero section */
+
+.hero {
+    background-image: url('../img/Captura\ de\ pantalla\ 2024-10-02\ 200748.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+}
+.hero a{
+    color: white;
+}
+.hero h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5em;
+    margin-top: 100px;
+    background: rgba(0, 0, 0, 0.336);
+    border-radius: 15px;
+}
+
+.hero h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2em;
+    margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.336);
+    border-radius: 15px;
+}
+
+
+.boton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.boton:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-section {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    text-align: center;
+    margin-top: 120px;
+    color: white; 
+}
+  
+.custom-section h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2rem;
+    margin: 0;
+}
+  
+
+/* Galería de productos */
+.galeria {
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 27px 34px 23px -23px rgba(0, 0, 0, 0.49);
+}
+
+.carousel-indicators{
+    color: black;
+}
+
+.carousel-item img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 30%;
+    margin: 10px;
+}
+
+.carousel-item h5{
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 25px;
+    color: black;
+}
+
+.carousel-item p{
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+/* Productos */
+
+.productos {
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.productos-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.producto-card {
+    border: 2px solid #B0BEC5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 30px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 27px 34px 23px -23px rgba(0, 0, 0, 0.49);
+}
+
+.producto-card a{
+    color: white
+}
+
+.producto-card:hover {
+    background-color: #fcfcfc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto-card img {
+    margin:5px;
+    width: 100%;
+}
+
+.producto-card h3{
+    font-size: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+}
+
+.producto-card h4{
+    font-size: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+}
+
+.producto-card p{
+    font-size: 16px;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+}
+
+.titulo h2{
+    align-items: center;
+    margin:20vh;
+    font-family: "Libre Baskerville", serif;
+    font-size: 60px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.item.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item.text h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #333;
+}
+
+.item.text p {
+    font-size: 1em;
+    color: #666;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.item.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ---- form-----*/
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 27px 34px 23px -23px rgba(0, 0, 0, 0.49);
+    max-width: 800px;
+    min-height: 75vh;
+    margin: 120px auto;
+    font-family: "Libre Baskerville", serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #B0BEC5;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4A4A4A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.formb {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-family: "Libre Baskerville", serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.formb:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20x;
+
+}
+
+footer div a img {
+    display: inline;
+    width: 50px;
+    margin: 15px;
+}
+
+/* Media Queries para dispositivos móviles */
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.1em;
+    }
+
+    .hero {
+        padding: 60px 20px;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero h2 {
+        font-size: 1.2em;
+    }
+
+    .galeria-container img {
+        width: 100%;
+    }
+
+    .producto-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .productos-container {
+        display: block;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    footer div a img {
+        width: 40px;
+    }
+}
+
+/* Media Queries para pantallas medianas */
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero h2 {
+        font-size: 1.4em;
+    }
+
+    .producto-card {
+        width: 250px;
+    }
+
+    .galeria-container img {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 720px) {
+    .gallery {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+  /* Pantallas de 360px */
+
+  @media (max-width: 360px) {
+    .gallery {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* A partir de 1080px: Cambiar a una columna por fila */
+
+@media (max-width: 1080px) {
+    .gallery {
+      display: block;
+    }
+  
+    .gallery .item {
+      grid-column: auto / auto; 
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  /* Pantallas de 720px */
+
+  @media (max-width: 720px) {
+    .gallery .item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .gallery .item p {
+      font-size: 1rem; 
+    }
+  }
+  
+  /* Pantallas de 480px */
+
+  @media (max-width: 480px) {
+    .gallery .item h3 {
+      font-size: 1rem; 
+    }
+  
+    .gallery .item p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Pantallas de 320px y menores */
+
+  @media (max-width: 320px) {
+    .gallery .item h3 {
+      font-size: 0.9rem; 
+    }
+  
+    .gallery .item p {
+      font-size: 0.8rem; 
+    }
+  }
