@@ -60,9 +60,11 @@ nav a {
     color: white;
     text-align: center;
     margin-top: 75px;
+    width: 100%;
 }
 .hero a{
     color: white;
+    width: 100%;
 }
 .hero h1 {
     font-family: "Libre Baskerville", serif;
@@ -72,6 +74,7 @@ nav a {
     margin-top: 100px;
     background: rgba(0, 0, 0, 0.336);
     border-radius: 15px;
+    width: 100%;
 }
 
 .hero h2 {
@@ -82,6 +85,7 @@ nav a {
     margin-bottom: 40px;
     background: rgba(0, 0, 0, 0.336);
     border-radius: 15px;
+    width: 100%;
 }
 
 
@@ -138,19 +142,19 @@ nav a {
     margin: 10px;
 }
 
-.carousel-item h5{
+.carousel-item .carousel-caption h5{
     text-align: center;
     font-family: "Libre Baskerville", serif;
     font-style: italic;
-    font-size: 25px;
+    font-size: 2vh;
     color: black;
 }
 
-.carousel-item p{
+.carousel-item .carousel-caption p{
     text-align: center;
     font-family: "Libre Baskerville", serif;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.5vh;
     color: black;
 }
 
@@ -352,6 +356,13 @@ footer div a img {
     margin: 15px;
 }
 
+footer div a img:hover{
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
 /* Media Queries para dispositivos móviles */
 
 @media (max-width: 768px) {
@@ -382,6 +393,7 @@ footer div a img {
         width: 100%;
     }
 
+    
     .producto-card {
         width: 100%;
         margin: 10px 0;
@@ -485,3 +497,43 @@ footer div a img {
       font-size: 0.8rem; 
     }
   }
+
+  @media (max-width: 1024px) {
+    .carousel-item .carousel-caption h5 {
+        font-size: 1.8vh; 
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 1.3vh; 
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item .carousel-caption h5 {
+        font-size: 1.6vh;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 1.2vh; 
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item .carousel-caption h5 {
+        font-size: 1.4vh; 
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 1vh; 
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel-item .carousel-caption h5 {
+        font-size: 1.2vh; 
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 0.9vh; 
+    }
+}
