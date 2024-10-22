@@ -332,6 +332,22 @@ textarea {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.fixed {
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+
+    a {
+        img {
+            width: 80px;
+            transition: transform 0.3s; 
+
+            &:hover {
+                transform: scale(1.1); 
+        }
+    }
+}
+
 
 
 /* Footer */

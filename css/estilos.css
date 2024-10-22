@@ -28,6 +28,16 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
+.fixed {
+  position: fixed;
+  bottom: 170px;
+  right: 50px; }
+  .fixed a img {
+    width: 80px;
+    transition: transform 0.3s; }
+    .fixed a img:hover {
+      transform: scale(1.1); }
+
 .fixed-top {
   margin: 0;
   padding: 20px; }
@@ -83,20 +93,6 @@ nav {
     background: rgba(0, 0, 0, 0.336);
     border-radius: 15px;
     width: 100%; }
-
-.boton {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; }
-  .boton:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
 .custom-section {
   background-color: rgba(0, 0, 0, 0.6);
@@ -282,7 +278,7 @@ footer div a img {
   footer div a img:hover {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    transform: translateY(-2px);
+    transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
 @media (max-width: 1024px) {
