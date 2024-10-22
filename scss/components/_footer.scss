@@ -1,0 +1,39 @@
+// Footer
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+    h2 {
+        font-family: $font-family;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    div a img {
+        display: inline;
+        width: 50px;
+        margin: 15px;
+    }
+}
+
+footer {
+    div {
+      a {
+        img {
+          display: inline;
+          width: 50px;
+          margin: 15px;
+  
+          &:hover {
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,123 @@
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero h2 {
+        font-size: 1.4em;
+    }
+
+    .producto-card {
+        width: 250px;
+    }
+
+    .galeria-container img {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 720px) {
+    .gallery {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+  /* Pantallas de 360px */
+
+  @media (max-width: 360px) {
+    .gallery {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* A partir de 1080px: Cambiar a una columna por fila */
+
+@media (max-width: 1080px) {
+    .gallery {
+      display: block;
+    }
+  
+    .gallery .item {
+      grid-column: auto / auto; 
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  /* Pantallas de 720px */
+
+  @media (max-width: 720px) {
+    .gallery .item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .gallery .item p {
+      font-size: 1rem; 
+    }
+  }
+  
+  /* Pantallas de 480px */
+
+  @media (max-width: 480px) {
+    .gallery .item h3 {
+      font-size: 1rem; 
+    }
+  
+    .gallery .item p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Pantallas de 320px y menores */
+
+  @media (max-width: 320px) {
+    .gallery .item h3 {
+      font-size: 0.9rem; 
+    }
+  
+    .gallery .item p {
+      font-size: 0.8rem; 
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .carousel-item .carousel-caption h5 {
+        font-size: 1.8vh; 
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 1.3vh; 
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item .carousel-caption h5 {
+        font-size: 1.6vh;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 1.2vh; 
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item .carousel-caption h5 {
+        font-size: 1.4vh; 
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 1vh; 
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel-item .carousel-caption h5 {
+        font-size: 1.2vh; 
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 0.9vh; 
+    }
+}

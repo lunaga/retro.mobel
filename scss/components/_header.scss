@@ -1,0 +1,35 @@
+
+.fixed-top {
+    margin: 0;
+    padding: 20px;
+}
+
+.bg-menu {
+    background-color: $color-secondary;
+}
+
+.bg-menus {
+    background-color: $color-secondary-light;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.container-fluid {
+    img {
+        width: 60px;
+    }
+}
+
+nav {
+    margin-top: 10px;
+
+    a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+    }
+}
