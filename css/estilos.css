@@ -28,16 +28,7 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
-.fixed {
-  position: fixed;
-  bottom: 170px;
-  right: 50px; }
-  .fixed a img {
-    width: 80px;
-    transition: transform 0.3s; }
-    .fixed a img:hover {
-      transform: scale(1.1); }
-
+/*------ head-----*/
 .fixed-top {
   margin: 0;
   padding: 20px; }
@@ -53,7 +44,8 @@ body {
   font-weight: bold; }
 
 .container-fluid img {
-  width: 60px; }
+  width: 60px;
+  border-radius: 100%; }
 
 nav {
   margin-top: 10px; }
@@ -274,7 +266,8 @@ footer {
 footer div a img {
   display: inline;
   width: 50px;
-  margin: 15px; }
+  margin: 15px;
+  border-radius: 100%; }
   footer div a img:hover {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;

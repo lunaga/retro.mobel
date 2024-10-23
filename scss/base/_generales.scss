@@ -15,19 +15,3 @@
     }
 }
 
-.fixed {
-    position: fixed;
-    bottom: 170px;
-    right: 50px;
-
-    a {
-        img {
-            width: 80px;
-            transition: transform 0.3s; 
-
-            &:hover {
-                transform: scale(1.1); 
-            }
-        }
-    }
-}

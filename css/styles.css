@@ -32,6 +32,7 @@ body {
 .logo {
     font-size: 2em;
     font-weight: bold;
+    border-radius: 100%;
 }
 .container-fluid img{
     width: 60px;
@@ -370,6 +371,7 @@ footer div a img {
     display: inline;
     width: 50px;
     margin: 15px;
+    border-radius: 100%;
 }
 
 footer div a img:hover{
