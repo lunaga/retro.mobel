@@ -56,7 +56,7 @@ nav {
     font-size: 1.2em; }
 
 .hero {
-  background-image: url("../img/Captura de pantalla 2024-10-02 200748.png");
+  background-image: url("../img/banner.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -111,18 +111,18 @@ nav {
   max-width: 30%;
   margin: 10px; }
 
-.carousel-item .carousel-caption h5 {
+.carousel-item .carousel-caption h2 {
   text-align: center;
   font-family: "Libre Baskerville", serif;
   font-style: italic;
-  font-size: 2vh;
+  font-size: 2em;
   color: black; }
 
 .carousel-item .carousel-caption p {
   text-align: center;
   font-family: "Libre Baskerville", serif;
   font-style: normal;
-  font-size: 1.5vh;
+  font-size: 1.5em;
   color: black; }
 
 .productos {
@@ -151,11 +151,9 @@ nav {
       margin: 5px;
       width: 100%; }
     .productos .producto-card h3,
-    .productos .producto-card h4,
     .productos .producto-card p {
       font-family: "Libre Baskerville", serif; }
-    .productos .producto-card h3,
-    .productos .producto-card h4 {
+    .productos .producto-card h3 {
       font-size: 20px;
       font-style: normal; }
     .productos .producto-card p {
@@ -166,33 +164,46 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px; }
-  .gallery .item {
-    background-color: white;
-    padding: 20px;
+
+.item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+  .item.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 1s forwards;
+    opacity: 0; }
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+    .item.text h2 {
+      font-family: "Libre Baskerville", serif;
+      font-size: 35px;
+      margin-bottom: 10px;
+      color: #333; }
+    .item.text p {
+      font-size: 20px;
+      color: #666;
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: italic; }
+  .item.image img {
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
-    .gallery .item.text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      .gallery .item.text h3 {
-        font-family: "Libre Baskerville", serif;
-        font-size: 2em;
-        margin-bottom: 10px;
-        font-size: 35px;
-        color: #333; }
-      .gallery .item.text p {
-        font-size: 1em;
-        color: #666;
-        font-family: "Libre Baskerville", serif;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 20px; }
-    .gallery .item.image img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px; }
+    transition: transform 0.5s ease;
+    transform: scale(1); }
+    .item.image img:hover {
+      transform: scale(1.05); }
 
 /* ---- form----- */
 .form-container {
@@ -252,12 +263,11 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px 0; }
-  footer h2 {
+  padding: 5px 0; }
+  footer p {
     font-family: "Libre Baskerville", serif;
-    font-weight: 500;
     font-style: italic;
-    font-size: 20px; }
+    font-size: 0.8vh; }
   footer div a img {
     display: inline;
     width: 50px;

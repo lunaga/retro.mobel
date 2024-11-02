@@ -1,6 +1,6 @@
 .hero {
     background: {
-        image: url('../img/Captura\ de\ pantalla\ 2024-10-02\ 200748.png');
+        image: url('../img/banner.avif');
         size: cover;
         repeat: no-repeat;
         position: center;
@@ -71,11 +71,11 @@
     }
 
     .carousel-caption {
-        h5 {
+        h2 {
             text-align: center;
             font-family: $font-family;
             font-style: italic;
-            font-size: 2vh;
+            font-size: 2em;
             color: black;
         }
 
@@ -83,7 +83,7 @@
             text-align: center;
             font-family: $font-family;
             font-style: normal;
-            font-size: 1.5vh;
+            font-size: 1.5em;
             color: black;
         }
     }
@@ -124,13 +124,12 @@
         }
 
         h3,
-        h4,
         p {
             font-family: $font-family;
         }
 
-        h3,
-        h4 {
+
+        h3 {
             font-size: 20px;
             font-style: normal;
         }
@@ -145,46 +144,53 @@
 // Galería
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-
-    .item {
-        background-color: white;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-        &.text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            h3 {
-                font-family: $font-family;
-                font-size: 2em;
-                margin-bottom: 10px;
-                font-size: 35px;
-                color: $color-primary;
-            }
-
-            p {
-                font-size: 1em;
-                color: #666;
-                font-family: $font-family;
-                font-weight: 400;
-                font-style: italic;
-                font-size: 20px;
-            }
-        }
-
-        &.image img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-gap: $grid-gap;
+  }
+  
+  .item {
+    background-color: $background-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+  
+    &.text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @include slide-in(100px);
+  
+      h2 {
+        font-family: $title-font;
+        font-size: $title-font-size;
+        margin-bottom: 10px;
+        color: $title-color;
+      }
+  
+      p {
+        font-size: $text-font-size;
+        color: $text-color;
+        font-family: $title-font;
+        font-weight: 400;
+        font-style: italic;
+      }
     }
-}
+  
+    &.image {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+        transition: transform $transition-duration ease;
+        transform: scale(1);
+  
+        &:hover {
+          transform: scale($scale-factor);
+        }
+      }
+    }
+  }
 
 /* ---- form----- */
 
