@@ -1,32 +1,32 @@
 .boton {
-    background-color: $btn-bg-color;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: $border-radius;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  background-color: $btn-bg-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 
-    &:hover {
-        background-color: $btn-hover-bg-color;
-        transform: translateY(-2px);
-        box-shadow: $shadow-default;
-    }
+  &:hover {
+      background-color: $btn-hover-bg-color;
+      transform: translateY(-2px);
+      box-shadow: $shadow-default;
+  }
 }
 
 @mixin slide-in($distance) {
-    animation: slideIn #{$animation-duration} forwards;
-    opacity: 0; 
-    
-    @keyframes slideIn {
-      from {
-        transform: translateX(-#{$distance});
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
+  animation: slideIn #{$animation-duration} forwards;
+  opacity: 0; 
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-#{$distance});
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
+}
